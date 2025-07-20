@@ -60,23 +60,16 @@ OAuth2SpringSecurity/
 │   │   │           │   └── GlobalException.java
 
 │   │   │           │   └── PasswordValidationFail.java
-
 │   │   │           │   └── TokenInvalidException.java
-
 │   │   │           │   └── UserAlreadyExistException.java
-
 │   │   │           │   └── UsernameNotFoundException.java
-
 │   │   │           │   └── ValidateException.java
 
 │   │   │           ├── config
-
 │   │   │           │   └── AppConfig.java
-
 │   │   │           │   └── WebSecurityConfig.java
 
 │   │   └── resources/
-
 │   │       └── application.properties
 
 │   └── test/
@@ -95,3 +88,26 @@ OAuth2SpringSecurity/
 - `repository/`: Spring Data JPA repositories
 - `service/`: Business logic and service implementations
 - `utility/`: Enums and constants
+
+## Security
+
+- Configured using `WebSecurityConfig.java`
+- CSRF and CORS are disabled for development
+- All endpoints are currently permitted (update as needed for production)
+
+## Endpoints
+
+- `/auth/signup`: User registration
+- `/auth/login`: User login
+
+## Exception Handling
+
+- Centralized in `GlobalException.java`
+- Custom exceptions for validation, authentication, and token errors
+
+## Token Management
+
+- Tokens are managed via `TokenRepository.java`
+- Token validation includes expiry and state checks
+
+
