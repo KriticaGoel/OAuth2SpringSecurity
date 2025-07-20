@@ -24,16 +24,27 @@ This project is a Spring Boot application for user registration, including valid
 
 ## Project Structure
 OAuth2SpringSecurity/
+
 ├── src/
+
 │   ├── main/
+
 │   │   ├── java/
+
 │   │   │   └── com/
+
 │   │   │       └── example/
+
 │   │   │           ├── model
+
 │   │   │           │   └── BaseModel.java
+
 │   │   │           │   └── User.java
+
 │   │   │           │   └── Token.java
+
 │   │   │           ├── repository/
+
 │   │   │           │   └── TokenRepository.java
 │   │   │           │   └── UserRepository.java
 │   │   │           └── controller
@@ -63,3 +74,12 @@ OAuth2SpringSecurity/
 │               └── example/
 ├── pom.xml
 └── README.md
+
+- `config/`: Application and security configuration (`AppConfig.java`, `WebSecurityConfig.java`)
+- `controller/`: REST controllers for authentication (`AuthController.java`)
+- `dto/`: Data Transfer Objects for requests and responses
+- `exception/`: Custom exception classes and global exception handling
+- `model/`: Entity classes (`User`, `Role`, `Token`, etc.)
+- `repository/`: Spring Data JPA repositories
+- `service/`: Business logic and service implementations
+- `utility/`: Enums and constants
