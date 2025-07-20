@@ -46,33 +46,57 @@ OAuth2SpringSecurity/
 │   │   │           ├── repository/
 
 │   │   │           │   └── TokenRepository.java
+
 │   │   │           │   └── UserRepository.java
+
 │   │   │           └── controller
+
 |   |   |                └──AuthController.java
-│   │   │           ├── dto/
+
+│   │   │           ├── dto
+
 │   │   │           │   └── SignUpRequestDto.java
+
 │   │   │           │   └── UserDto.java
+
 │   │   │           │   └── LoginRequestDto.java
+
 │   │   │           │   └── ExceptionDto.java
+
 │   │   │           ├── service
+
 │   │   │           │   └── AuthServiceImpl.java
+
 │   │   │           ├── exception
+
 │   │   │           │   └── GlobalException.java
+
 │   │   │           │   └── PasswordValidationFail.java
+
 │   │   │           │   └── TokenInvalidException.java
+
 │   │   │           │   └── UserAlreadyExistException.java
+
 │   │   │           │   └── UsernameNotFoundException.java
+
 │   │   │           │   └── ValidateException.java
+
 │   │   │           ├── config
+
 │   │   │           │   └── AppConfig.java
+
 │   │   │           │   └── WebSecurityConfig.java
+
 │   │   └── resources/
+
 │   │       └── application.properties
+
 │   └── test/
 │       └── java/
 │           └── com/
 │               └── example/
 ├── pom.xml
+
 └── README.md
 
 - `config/`: Application and security configuration (`AppConfig.java`, `WebSecurityConfig.java`)
