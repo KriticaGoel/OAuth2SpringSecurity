@@ -52,6 +52,9 @@ OAuth2SpringSecurity/
 │   │   │           │   └── UserAlreadyExistException.java
 │   │   │           │   └── UsernameNotFoundException.java
 │   │   │           │   └── ValidateException.java
+│   │   │           ├── config
+│   │   │           │   └── AppConfig.java
+│   │   │           │   └── WebSecurityConfig.java
 │   │   └── resources/
 │   │       └── application.properties
 │   └── test/
