@@ -1,11 +1,12 @@
 package com.example.model;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 import java.util.Date;
+
+import jakarta.persistence.CascadeType;
 
 @Data
 @Entity
