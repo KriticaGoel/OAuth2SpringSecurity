@@ -36,39 +36,27 @@ OAuth2SpringSecurity/
 │   │   │       └── example/
 
 │   │   │           ├── model
-
 │   │   │           │   └── BaseModel.java
-
 │   │   │           │   └── User.java
-
 │   │   │           │   └── Token.java
 
 │   │   │           ├── repository/
-
 │   │   │           │   └── TokenRepository.java
-
 │   │   │           │   └── UserRepository.java
 
 │   │   │           └── controller
-
 |   |   |                └──AuthController.java
 
 │   │   │           ├── dto
-
 │   │   │           │   └── SignUpRequestDto.java
-
 │   │   │           │   └── UserDto.java
-
 │   │   │           │   └── LoginRequestDto.java
-
 │   │   │           │   └── ExceptionDto.java
 
 │   │   │           ├── service
-
 │   │   │           │   └── AuthServiceImpl.java
 
 │   │   │           ├── exception
-
 │   │   │           │   └── GlobalException.java
 
 │   │   │           │   └── PasswordValidationFail.java
